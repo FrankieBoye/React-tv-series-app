@@ -1,3 +1,16 @@
+### TV Series app
+
+A single page web app that will allow you to search through popular tv series.
+
+I created this to learn more about:
+- gsx
+- props
+- components and containers
+- state
+- conditional rendering
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
