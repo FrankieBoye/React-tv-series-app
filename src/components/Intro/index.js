@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const Intro = (props) => (
   <p className="App-intro">
-    Our first functional component
+    {props.message}
   </p>
 );
 
