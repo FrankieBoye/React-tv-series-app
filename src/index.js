@@ -4,7 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const greeting = React.createElement('h1', {}, 'Hello world!');
+const getCurrentDate = function() {
+  const date = new Date();
+  return date.toDateString();
+}
+
+const greeting = <h1>Hello world! Current date : {getCurrentDate()}</h1>;
 
 ReactDOM.render(greeting, document.getElementById('root'));
 
