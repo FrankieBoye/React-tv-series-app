@@ -9,9 +9,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://api.tvmaze.com/singlesearch/shows?q=gear')
-    .then(response => response.json())
-    .then(json => console.log(json))
+    fetch('http://api.tvmaze.com/search/shows?q=top-gear')
+    .then((response) => response.json())
+    .then(json => this.setState({ series: json }))
   }
 
   render() {
