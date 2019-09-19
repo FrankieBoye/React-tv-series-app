@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './index.css';
 
 const SeriesList = (props) => {
   return (
     <div>
-      <ul>
+      <ul className="series-list">
         {props.list.map(series => (
           <li>{series.show.name}</li>
         ))}
