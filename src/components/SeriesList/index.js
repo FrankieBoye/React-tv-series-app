@@ -6,7 +6,9 @@ const SeriesList = (props) => {
     <div>
       <ul className="series-list">
         {props.list.map(series => (
-          <li>{series.show.name}</li>
+          <li key={series.show.id}>
+          {series.show.name}
+          </li>
         ))}
       </ul>
     </div>
