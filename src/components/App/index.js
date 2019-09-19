@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Intro from '../Intro';
 import 'whatwg-fetch';
+import Series from '../../containers/Series'
 
 class App extends Component {
   state = {
@@ -22,6 +23,7 @@ class App extends Component {
         </header>
         <Intro message="Here you can find all of your most loved series" />
         The length of the series array - {this.state.series.length}
+        <Series />
       </div>
     );
   }
