@@ -2,12 +2,22 @@
 
 A single page web app that will allow you to search through popular tv series.
 
-I created this to learn more about:
-- jsx
-- props
-- components and containers
-- state
-- conditional rendering
+I created this to learn more about and practice the following:
+
+- React Elements
+- JSX
+- Props
+- State
+- Lifecycle (componentDidMount)
+- Containers
+- Lists and Keys
+- Refactoring List Component
+- Forms (Input)
+- Conditional Rendering
+- Images (Loader Component)
+- Setting Up React Router
+- Setting Routes
+- Using Route Params
 
 
 
