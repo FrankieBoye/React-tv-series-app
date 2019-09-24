@@ -29,14 +29,19 @@ onSeriesInputChange = e => {
       {
         series.length === 0 && seriesName.trim() === ''
         &&
-        <p>Please enter series name into the tinput box</p>
+        <p>Please enter series name into the input box</p>
       }
       {
         series.length === 0 && seriesName.trim() !== ''
         &&
         <p>No series has been found with that name</p>
       }
-      <SeriesList list={this.state.series} />
+      {
+        isFetching && <p>Loading...</p>
+      }
+      {
+        !isFetching && <SeriesList list={this.state.series} />
+      }
       </div>
     )
   }
