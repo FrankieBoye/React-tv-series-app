@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SeriesList from '../../components/SeriesList';
+import Loader from '../../components/Loader';
 
 class Series extends Component {
   state = {
@@ -27,17 +28,17 @@ onSeriesInputChange = e => {
         onChange={this.onSeriesInputChange} />
       </div>
       {
-        series.length === 0 && seriesName.trim() === ''
+        !isFetching && series.length === 0 && seriesName.trim() === ''
         &&
-        <p>Please enter series name into the input box</p>
+        <p>Please enter the TV series name into the input box</p>
       }
       {
-        series.length === 0 && seriesName.trim() !== ''
+        !isFetching && series.length === 0 && seriesName.trim() !== ''
         &&
         <p>No series has been found with that name</p>
       }
       {
-        isFetching && <p>Loading...</p>
+        isFetching && <Loader />
       }
       {
         !isFetching && <SeriesList list={this.state.series} />
